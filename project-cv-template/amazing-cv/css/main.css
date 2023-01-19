@@ -1,0 +1,164 @@
+* {
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Layout: 1 header, 2 columns */
+.container {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/* start HEADER styling */
+
+.header {
+    background-color: darkorchid;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header > div {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header > div,
+.header > div > * {
+    background-color: inherit;
+}
+
+.my-name > h1 {
+    font-size: 300%;
+    margin-bottom: 10px;
+}
+
+.my-fields {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    font-size: .8rem;
+}
+
+.my-fields > div {
+    margin-right: 25px;
+}
+
+.my-fields > div > a {
+    text-decoration: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+/* end HEADER styling */
+
+
+
+
+
+/* start LEFT COLUMN styling */
+
+.column-left {
+    background-color: yellowgreen;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-left > div {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    background-color: inherit;
+}
+
+.column-left > div:first-of-type {
+    border-bottom: 3px solid black;
+    margin-top: 10px;
+}
+
+.column-left > div > h3 {
+    background-color: inherit;
+    margin-bottom: 5px;
+}
+
+.exp-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: inherit;
+}
+
+.exp-list > div {
+    background-color: inherit;
+    margin-top: 20px;
+}
+
+.exp-list > div > h6, span {
+    background-color: inherit;
+}
+
+/* end LEFT COLUMN styling */
+
+
+
+
+
+/* start RIGHT COLUMN styling */
+
+.column-right {
+    background-color: crimson;
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column-right > div {
+    width: calc(100% - 50px);
+    margin: 0 auto;
+    background-color: inherit;
+}
+
+.column-right > div:first-of-type {
+    border-bottom: 3px solid black;
+    margin-top: 10px;
+}
+
+.column-right > div > h3 {
+    background-color: inherit;
+    margin-bottom: 5px;
+}
+
+.edu-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: inherit;
+}
+
+.edu-list > div {
+    background-color: inherit;  
+    margin-top: 20px;
+}
+
+.edu-list > div > h6, span {
+    background-color: inherit;
+}
+
+/* end RIGHT COLUMN styling */
