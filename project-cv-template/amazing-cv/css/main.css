@@ -7,16 +7,12 @@
 }
 
 
-/* Layout: 1 header, 2 columns */
+
 .container {
-    height: 100vh;
-    width: 80%;
-    margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    margin: auto;
 }
-
-
 
 
 
@@ -51,6 +47,7 @@
     /* justify-content: space-between; */
     justify-content: flex-start;
     font-size: .8rem;
+    flex-flow: row wrap;
 }
 
 .my-fields > div {
@@ -71,12 +68,21 @@
 
 /* start LEFT COLUMN styling */
 
-.column-left {
+/* .column-left {
     background-color: yellowgreen;
     width: 50%;
     height: 80%;
     display: flex;
     flex-direction: column;
+} */
+.column-left {
+    background-color: yellowgreen;
+    /* width: 50%; */
+    /* height: 80%; */
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+
 }
 
 .column-left > div {
@@ -120,12 +126,24 @@
 
 /* start RIGHT COLUMN styling */
 
-.column-right {
+/* .column-right {
     background-color: crimson;
     width: 50%;
     height: 80%;
     display: flex;
     flex-direction: column;
+} */
+.column-right {
+    background-color: crimson;
+    /* width: 50%; */
+    /* height: 80%; */
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%
+    
+    /* flex: 1 0 auto; */
+
+
 }
 
 .column-right > div {
@@ -162,3 +180,15 @@
 }
 
 /* end RIGHT COLUMN styling */
+
+
+
+
+
+/* mobile first, responsive design */
+
+@media all and (min-width: 600px) {
+    .column { flex: 1 0 0; 
+    height: 100vh;
+    }
+  }
