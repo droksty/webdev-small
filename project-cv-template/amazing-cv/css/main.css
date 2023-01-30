@@ -7,7 +7,6 @@
 }
 
 
-
 .container {
     display: flex;
     flex-flow: row wrap;
@@ -16,84 +15,73 @@
 
 
 
-/* start HEADER styling */
+/* HEADER styling start */
 
 .header {
-    background-color: darkorchid;
     width: 100%;
-    height: 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 10px;
+    row-gap: 15px;
+    background-color: darkorchid;
 }
 
-.header > div {
-    width: 95%;
-    margin: 0 auto;
-}
-
-.header > div,
-.header > div > * {
+.header > * {
+    /* padding: 10px; */
     background-color: inherit;
 }
 
-.my-name > h1 {
-    font-size: 300%;
-    margin-bottom: 10px;
+.my-name {
+    font-size: 250%;
+    /* margin-bottom: 15px; */
 }
 
-.my-fields {
-    display: flex;
-    /* justify-content: space-between; */
-    justify-content: flex-start;
+.contact-details {
+    list-style: none;
     font-size: .8rem;
+    display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+    column-gap: 12px;
 }
 
-.my-fields > div {
-    margin-right: 25px;
-}
-
-.my-fields > div > a {
-    text-decoration: none;
+.header > .contact-details > li {
     background-color: inherit;
-    color: inherit;
 }
 
-/* end HEADER styling */
+.header > ul > li > a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+/* HEADER styling end */
 
 
+
+.column {
+    padding: 10px;
+}
+
+.column > div {
+    background-color: inherit;
+}
+
+.column > div:first-of-type {
+    border-bottom: 3px solid black;
+    margin-top: 10px;
+}
 
 
 
 /* start LEFT COLUMN styling */
 
-/* .column-left {
-    background-color: yellowgreen;
-    width: 50%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-} */
 .column-left {
-    background-color: yellowgreen;
-    /* width: 50%; */
-    /* height: 80%; */
     display: flex;
     flex-direction: column;
     flex: 1 0 auto;
-
-}
-
-.column-left > div {
-    width: calc(100% - 50px);
-    margin: 0 auto;
-    background-color: inherit;
-}
-
-.column-left > div:first-of-type {
-    border-bottom: 3px solid black;
-    margin-top: 10px;
+    background-color: yellowgreen;
 }
 
 .column-left > div > h3 {
@@ -122,39 +110,14 @@
 
 
 
-
-
 /* start RIGHT COLUMN styling */
 
-/* .column-right {
-    background-color: crimson;
-    width: 50%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-} */
 .column-right {
-    background-color: crimson;
-    /* width: 50%; */
-    /* height: 80%; */
     display: flex;
     flex-direction: column;
-    flex: 1 0 50%
-    
-    /* flex: 1 0 auto; */
-
-
-}
-
-.column-right > div {
-    width: calc(100% - 50px);
-    margin: 0 auto;
-    background-color: inherit;
-}
-
-.column-right > div:first-of-type {
-    border-bottom: 3px solid black;
-    margin-top: 10px;
+    /* flex: 1 0 50% */
+    flex: 1 0 auto;
+    background-color: crimson;
 }
 
 .column-right > div > h3 {
@@ -180,8 +143,6 @@
 }
 
 /* end RIGHT COLUMN styling */
-
-
 
 
 
